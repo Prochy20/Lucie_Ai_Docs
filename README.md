@@ -13,5 +13,5 @@ https://git.lucie-ai.space/Lucie-Ai/Documentation/issues
 Dokumentace je k dispozici v tomto repozitáři
 
 **Obsah**
-1. GIT
+1. [GIT (GOGS)](https://git.lucie-ai.space/Lucie-Ai/Documentation/src/master/git/gogs.md)
     1. [Webhooky](https://git.lucie-ai.space/Lucie-Ai/Documentation/src/master/git/webhooks.md) 
