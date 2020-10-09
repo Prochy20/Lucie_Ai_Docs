@@ -10,7 +10,8 @@ https://git.lucie-ai.space/Lucie-Ai/Documentation/issues
 
 ## Dokumentace
 
-Dokumentace je k dispozici ve [WIKI](https://git.lucie-ai.space/Lucie-Ai/Documentation/wiki)
-```
-https://git.lucie-ai.space/Lucie-Ai/Documentation/wiki
-```
+Dokumentace je k dispozici v tomto repozitáři
+
+**Obsah**
+1. GIT
+    2.[Webhooky](https://git.lucie-ai.space/Lucie-Ai/Documentation/src/master/git/webhooks.md) 
