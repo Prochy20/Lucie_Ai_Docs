@@ -1,5 +1,5 @@
-# Webhooks
-## Příchozí webhook
+# Webhooky
+## Příchozí webhooky
 
 Gogs GIT může poslat na vybranou adresu webhook metodou **POST** obsahující informace o provedené akci
 
