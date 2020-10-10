@@ -68,7 +68,7 @@ Maximální verze konfiguračního souboru:
 
 ### GLOBAL
 
-Tento blok slouží pro globálně aplikovaná nastavení CI/CD
+Tento blok aplikuje globální nastavení CI/CD
 
 ```
     "global": {
@@ -85,7 +85,7 @@ Parametry:
 
 ### Deploy
 
-Tento blok slouží pro nastavení parametrů samotného deploye
+Tento blok nastavuje parametry samotného deploye
 
 ```
     "deploy": {
@@ -100,5 +100,32 @@ Tento blok slouží pro nastavení parametrů samotného deploye
 Parametry:
 * **dir:** false || '/dist/' // Parametr nastavuje cestu k výslednému kódu, určenému pro deploy. Hodnota FALSE deployue celý repozitář
 * **deleteRemoteCode:** true || false // Nastavením hodnoty na true bude před provedením deploye kód na cílovém serveru smazán
+
+
+### Install
+
+Tento blok provádí instalací závislostí příkazem *npm install*
+
+```
+"install": {
+        "process": "true"
+    },
+```
+
+### Build
+
+Tento blok provádí build kódu příkazem *npm run build*
+
+```
+    "build": {
+        "process": "true",
+        "params": {
+            "resultDirectory": "dist"
+        }
+    },
+```
+
+Parametry:
+* **resultDirectory** 'dir' // Slouží k označení adresáře, ve kterém se nachází výsledný kód
 
 
