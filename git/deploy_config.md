@@ -122,7 +122,7 @@ Tento blok provádí build kódu příkazem *npm run build*
      "params": {
         "resultDirectory": "dist"
         }
-},
+    },
 ```
 
 Parametry:
