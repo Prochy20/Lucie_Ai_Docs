@@ -111,7 +111,7 @@ Pro úspešné vypočítání hashe na straně serveru je třeba nastavit **Cont
 application/x-www-form-urlencoded
 ```
 
-VIZ: [Nastavení webhooků](http://https://git.lucie-ai.space/Lucie-Ai/Documentation/src/master/git/webhooks_settings.md)
+VIZ: [Nastavení webhooků](https://git.lucie-ai.space/Lucie-Ai/Documentation/src/master/git/webhooks_settings.md)
 
 ### Příklad porovnání signature
 
