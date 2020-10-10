@@ -80,7 +80,25 @@ Tento blok slouží pro globálně aplikovaná nastavení CI/CD
 ```
 
 Parametry:
-* **server**: 'PROD' || 'DEV' // Výběr serveru, na který bude proveden deploy
-* **remoteDir**: '/dir' // Adresář, do kterého bude výsledný script deployován
+* **server:** 'PROD' || 'DEV' // Výběr serveru, na který bude proveden deploy
+* **remoteDi:r** '/dir' // Adresář, do kterého bude výsledný script deployován
+
+### Deploy
+
+Tento blok slouží pro nastavení parametrů samotného deploye
+
+```
+    "deploy": {
+        "process": "true",
+        "params": {
+            "dir": "false",
+            "deleteRemoteCode": "true"
+        }
+    },
+```
+
+Parametry:
+* **dir:** false || '/dist/' // Parametr nastavuje cestu k výslednému kódu, určenému pro deploy. Hodnota FALSE deployue celý repozitář
+* **deleteRemoteCode:** true || false // Nastavením hodnoty na true bude před provedením deploye kód na cílovém serveru smazán
 
 
