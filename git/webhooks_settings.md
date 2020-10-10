@@ -1,11 +1,23 @@
 # Nastavení webhooků
 
-Nastavení webhooku se provádí v [GITu](https://git.lucie-ai.space)
+## Nastavení GITu
+
+Nastavení webhooku se provádí v [GITu](https://git.lucie-ai.space), kdy lze nastavit následující pole:
 * Endpoint URL
 * SECRET
 * Content type
 
-Po nastavení webhooku v GITu je třeba do repozitáře přidat Deploy config (.deploy.conf.js) a nastavit DEV a produkční prostředí
+Doporučené nastavení:
+
+```
+EndpointURL: 'http://git.lucie-ai.space:8085/api/v1/git/'
+SECRET: 'libovolny_secret_unikatni_pro_kazdy_webhook'
+Content-type: 'application/www-form-urlencoded'
+
+```
+
+
+## Nastavení DEV Serveru
 
 Pro ověření webhooku je třeba na **DEV serveru** nastavit v mongo databázi **secret** pro vybraný **webhook**:
 
@@ -20,14 +32,4 @@ Kolekce: Webhooks
     "__v" : 0
 }
 
-```
-
-### Příklad porovnání signature
-
-```
-const { payload } = req.body;
-const signature = helpers.hashSecret('123456', payload);
-const data = JSON.parse(payload);
-
-const isAuthorized = req.headers['x-gogs-signature'] === signature;
 ```
