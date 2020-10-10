@@ -153,3 +153,22 @@ Obsah souboru .env se nastavuje na DEV Serveru v Mongo databázi (kolekce: doten
     "__v" : 0
 }
 ```
+
+### PM2Stop
+
+Tento blok zastaví zvolený pm2 proces na cílovém serveru
+
+```
+    "pm2stop": {
+        "process": "true",
+        "params": {
+            "processName": "example-server"
+        }
+    },
+```
+
+Parametry:
+* **processName**: 'example-process' // Jméno procesu, který má být zastaven
+
+**!** Pokud není cílový proces nalezen, deploy proces není přerušen **!**
+
