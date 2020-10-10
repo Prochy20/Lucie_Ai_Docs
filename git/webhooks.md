@@ -95,3 +95,19 @@ X-Gogs-Signature: 1b2b02f4a34608e00f9bd099a006da812d00bffa68e4b291e4e17445bd09f0
 }
 ```
 
+
+## Ověření webhooku
+
+Pro ověření se používá HASH obsažený v hlavičce 
+
+```
+X-Gogs-Signature: 1b2b02f4a34608e00f9bd099a006da812d00bffa68e4b291e4e17445bd09f013
+```
+
+Hash je vytvořen z **PAYLOAD** funkcí SHA256 HMAC hex digest, při použití zadaného **SECRET**
+
+Pro úspešné vypočítání hashe na straně serveru je třeba nastavit **Content type**
+```
+application/x-www-form-urlencoded
+```
+
