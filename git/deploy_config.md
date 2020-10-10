@@ -129,3 +129,27 @@ Parametry:
 * **resultDirectory** 'dir' // Slouží k označení adresáře, ve kterém se nachází výsledný kód
 
 
+### Createdotenv
+
+Tento blok vytvoří .env soubor a zapíše do něj zvolený obsah
+
+```
+"createDotEnv": {
+    "process": "true"
+    },
+```
+
+Obsah souboru .env se nastavuje na DEV Serveru v Mongo databázi (kolekce: dotenvs)
+
+```
+{
+    "_id" : ObjectId("5f79b946405b1d14c962e08e"),
+    "timestamp" : ISODate("2020-10-04T12:00:06.540Z"),
+    "repository" : "git@git.lucie-ai.space:Prochy20/node_test.git",
+    "content" : {
+        "STEAM_USER" : "lucie_ai",
+        "NODE_ENV" : "PROD"
+    },
+    "__v" : 0
+}
+```
