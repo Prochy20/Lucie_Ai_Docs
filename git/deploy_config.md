@@ -172,3 +172,37 @@ Parametry:
 
 **!** Pokud není cílový proces nalezen, deploy proces není přerušen **!**
 
+### Pack
+
+Tento blok vytvoří z výsledného kódu archiv .tar.gz
+
+```
+    "pack": {
+        "process": "true",
+        "params": {
+            "folder": "/"
+        }
+    },
+```
+
+Parametry:
+* **folder** '/' // Cílová složka, která je zabalena - celý repozitář je značen hodnotou '/'
+
+### PM2Start
+
+Tento blok nastartuje PM2 Process na cílovém serveru
+
+```
+    "pm2start": {
+        "process": "true",
+        "params": {
+            "entryPoint": "./src/server.js",
+            "processName": "example-server"
+        }
+    }
+```
+
+Parametry:
+* **entryPoint** './app.js' // Entry point aplikace
+* **processName** 'example-process' // Jméno pm2 procesu - toto nastavení je využíváno při dalším běhu scriptu pro adresování scriptu k zastavení
+
