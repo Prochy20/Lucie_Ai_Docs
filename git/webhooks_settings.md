@@ -1,6 +1,6 @@
 # Nastavení webhooků
 
-## Nastavení GITu
+## Nastavení v GITu
 
 Nastavení webhooku se provádí v [GITu](https://git.lucie-ai.space), kdy lze nastavit následující pole:
 * Endpoint URL
@@ -17,7 +17,7 @@ Content-type: 'application/www-form-urlencoded'
 ```
 
 
-## Nastavení DEV Serveru
+## Nastavení na DEV Serveru
 
 Pro ověření webhooku je třeba na **DEV serveru** nastavit v mongo databázi **secret** pro vybraný **webhook**:
 
