@@ -63,3 +63,24 @@ Maximální verze konfiguračního souboru:
 
 }
 ```
+
+## Bloky konfiguračního souboru
+
+### GLOBAL
+
+Tento blok slouží pro globálně aplikovaná nastavení CI/CD
+
+```
+    "global": {
+        "params": {
+            "server": "PROD",
+            "remoteDir": "/var/www/"
+        }
+    },
+```
+
+Parametry:
+* server: 'PROD' || 'DEV' // Výběr serveru, na který bude proveden deploy
+* remoteDir: '/dir' // Adresář, do kterého bude výsledný script deployován
+
+
