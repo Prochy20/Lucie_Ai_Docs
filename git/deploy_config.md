@@ -80,7 +80,7 @@ Tento blok slouží pro globálně aplikovaná nastavení CI/CD
 ```
 
 Parametry:
-* server: 'PROD' || 'DEV' // Výběr serveru, na který bude proveden deploy
-* remoteDir: '/dir' // Adresář, do kterého bude výsledný script deployován
+* **server**: 'PROD' || 'DEV' // Výběr serveru, na který bude proveden deploy
+* **remoteDir**: '/dir' // Adresář, do kterého bude výsledný script deployován
 
 
