@@ -117,12 +117,12 @@ Tento blok provádí instalací závislostí příkazem *npm install*
 Tento blok provádí build kódu příkazem *npm run build*
 
 ```
-    "build": {
-        "process": "true",
-        "params": {
-            "resultDirectory": "dist"
+"build": {
+    "process": "true",
+     "params": {
+        "resultDirectory": "dist"
         }
-    },
+},
 ```
 
 Parametry:
