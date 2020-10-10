@@ -118,16 +118,6 @@ Pro úspešné vypočítání hashe na straně serveru je třeba nastavit **Cont
 application/x-www-form-urlencoded
 ```
 
-### Příklad porovnání signature
-
-```
-const { payload } = req.body;
-const signature = helpers.hashSecret('123456', payload);
-const data = JSON.parse(payload);
-
-const isAuthorized = req.headers['x-gogs-signature'] === signature;
-```
-
 Pro ověření webhooku je třeba na **DEV serveru** nastavit v mongo databázi **secret** pro vybraný **webhook**:
 
 Kolekce: Webhooks
@@ -141,4 +131,14 @@ Kolekce: Webhooks
     "__v" : 0
 }
 
+```
+
+### Příklad porovnání signature
+
+```
+const { payload } = req.body;
+const signature = helpers.hashSecret('123456', payload);
+const data = JSON.parse(payload);
+
+const isAuthorized = req.headers['x-gogs-signature'] === signature;
 ```
