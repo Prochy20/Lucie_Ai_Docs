@@ -111,3 +111,14 @@ Pro úspešné vypočítání hashe na straně serveru je třeba nastavit **Cont
 application/x-www-form-urlencoded
 ```
 
+VIZ: [Nastavení webhooků](http://https://git.lucie-ai.space/Lucie-Ai/Documentation/src/master/git/webhooks_settings.md)
+
+### Příklad porovnání signature
+
+```
+const { payload } = req.body;
+const signature = helpers.hashSecret('123456', payload);
+const data = JSON.parse(payload);
+
+const isAuthorized = req.headers['x-gogs-signature'] === signature;
+```
