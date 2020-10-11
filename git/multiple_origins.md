@@ -1,4 +1,3 @@
-# Nastavení více originů pro repozitář
 
 Pushing to Multiple Git Repos
 -----------------------------
